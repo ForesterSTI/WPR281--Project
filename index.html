@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>WPR Project</title>
+</head>
+<body>
+    <div class="left-block"></div>
+
+    <div class="form-container">
+        <p id="heading">Basic Details</p>
+        <hr>
+        <form id="form" action="/">
+            <div class="column">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" autofocus placeholder="Ferruccio" onkeyup="checkName()">
+
+                <label for="email">Email ID</label>
+                <input type="text" name="email" id="email" placeholder="lambo@gmail.com">
+
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="United States" disabled selected>United States</option>
+                </select>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="000-000-0000">
+                <input type="button" value="Reset All" id="reset">
+            </div>
+
+            <div class="column">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Lamborghini">
+    
+                <label for="user-id">Your User ID</label>
+                <input type="text" name="user-id" id="user-id" placeholder="lambo123">
+
+                <div class="state-city">
+                    <div class="state">
+                        <label for="state">State</label>
+                        <select name="state" id="state">
+                            <option value="Nevada" disabled selected>Nevada</option>
+                        </select>
+                    </div>
+
+                    <div class="city">
+                        <label for="city">City</label>
+                        <select name="city" id="city">
+                            <option value="Las Vegas">Las Vegas</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <label for="ref-code">&nbsp;</label>
+                <input type="text" name="ref-code" id="ref-code" placeholder="Reference Code">
+                <input type="button" value="Continue" id="continue">
+            </div>
+
+
+        </form>
+    </div>
+</body>
+</html>

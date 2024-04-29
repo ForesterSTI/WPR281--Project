@@ -1,0 +1,81 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; flex-direction: row;
+}
+
+.left-block{
+    width: 200px; height: 100vh;
+    background-color: dodgerblue;
+}
+
+.form-container {
+    margin-left: 20px; 
+    background-color: #fff;
+} 
+
+form{
+    display: flex;
+} 
+
+.column{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.state-city{
+    display: flex;
+    flex-direction: row;
+}
+
+.state, .city{
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    border: none; outline: none;
+    border-bottom: 2px solid silver;
+    padding: 5px;
+    margin-bottom: 20px; margin-right: 50px;
+}
+
+input:hover, select:hover{
+    border-bottom: 2px solid dodgerblue;
+    &:focus{
+        outline: none;
+        border-bottom: 2px solid dodgerblue;
+        + label{
+            color: dodgerblue;
+        }
+    }
+}
+
+#heading{
+    color: dodgerblue; font-size: 20px;
+}
+
+label{
+    color: dimgray;
+}
+
+#continue{
+    background-color: dodgerblue;
+    border-radius: 10px;
+    color: white;
+    width: 80px;
+    position: relative;
+    left: 120px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#reset{
+    background-color: white;
+    color: dimgray;
+    border: none;
+    position: relative;
+    right: 80px; margin-left: 50px;
+}
